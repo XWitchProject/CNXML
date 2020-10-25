@@ -24,5 +24,6 @@ CNXML_EXPORT cnxml_string* CNXML_API cnxml_string_stored(cnxml_context* ctx, cnx
 CNXML_EXPORT bool CNXML_API cnxml_string_equal(cnxml_string a, cnxml_string b);
 CNXML_EXPORT bool CNXML_API cnxml_string_cequal(cnxml_string a, const char* b);
 CNXML_EXPORT void CNXML_API cnxml_string_print(FILE* f, cnxml_string str);
+CNXML_EXPORT void CNXML_API cnxml_string_extract(cnxml_string str, const char** cstring_out, size_t* len_out);
 
 #endif//CNXML_STRING

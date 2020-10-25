@@ -60,8 +60,8 @@ int main(int argc, const char** argv) {
   // cnxml_string_print(stdout, elem.text_content);
   // printf("\n");
 
-  // printf("ATTRIBUTES:\n");
-  // cnxml_hashmap_iterate(elem.attributes, attr_iter, NULL);
+  printf("ATTRIBUTES:\n");
+  cnxml_hashmap_iterate(elem.attributes, attr_iter, NULL);
 
   // while (!cnxml_tokenizer_is_eof(tokenizer)) {
   //   cnxml_token t = cnxml_tokenizer_next_token(tokenizer);

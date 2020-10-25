@@ -82,3 +82,8 @@ cnxml_string* cnxml_string_stored(cnxml_context* ctx, cnxml_string str) {
 	new_str->len = str.len;
 	return new_str;
 }
+
+void cnxml_string_extract(cnxml_string str, const char** cstring_out, size_t* len_out) {
+    if (cstring_out != NULL) *cstring_out = str.ptr;
+    if (len_out != NULL) *len_out = str.len;
+}
